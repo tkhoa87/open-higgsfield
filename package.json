@@ -6,7 +6,10 @@
     "dev": "next dev --port 3000",
     "build": "next build",
     "start": "next start",
-    "brand": "node scripts/build-brand-assets.mjs"
+    "brand": "node scripts/build-brand-assets.mjs",
+    "pm2:dev": "npx --yes pm2@latest startOrRestart ecosystem.config.cjs --only open-higgsfield-dev",
+    "pm2:logs": "npx --yes pm2@latest logs open-higgsfield-dev",
+    "pm2:stop": "npx --yes pm2@latest stop open-higgsfield-dev"
   },
   "dependencies": {
     "@tanstack/react-virtual": "^3.14.10",
