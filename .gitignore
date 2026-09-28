@@ -13,3 +13,6 @@ tsconfig.tsbuildinfo
 .env*
 .idea
 .browser/
+
+# Next.js regenerates this on dev/build
+next-env.d.ts
