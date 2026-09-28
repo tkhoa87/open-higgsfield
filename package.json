@@ -7,9 +7,9 @@
     "build": "next build",
     "start": "next start",
     "brand": "node scripts/build-brand-assets.mjs",
-    "pm2:dev": "npx --yes pm2@latest startOrRestart ecosystem.config.cjs --only open-higgsfield-dev",
-    "pm2:logs": "npx --yes pm2@latest logs open-higgsfield-dev",
-    "pm2:stop": "npx --yes pm2@latest stop open-higgsfield-dev"
+    "pm2:dev": "pm2 startOrRestart ecosystem.config.cjs --only open-higgsfield-dev",
+    "pm2:logs": "pm2 logs open-higgsfield-dev",
+    "pm2:stop": "pm2 stop open-higgsfield-dev"
   },
   "dependencies": {
     "@tanstack/react-virtual": "^3.14.10",
@@ -23,6 +23,7 @@
     "@types/node": "^22.10.2",
     "@types/react": "^19.2.0",
     "@types/react-dom": "^19.2.0",
+    "pm2": "7.0.4",
     "typescript": "^5.9.2"
   }
 }
